@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI CALCULATOR</title>
+</head>
+<body>
+	<center><strong><h1 style="color:red"><marquee width="100%" behavior="scroll" >BMI CALCULATOR</marquee></h1></strong></center><br>
+	<div class="loginform">
+    <form action="/form_get/" method="POST" >
+	{% csrf_token %}
+	<table>
+	<tr style="color:blue"><td style="font-size:125%">Height:</td> 
+	<td><input type="text" name="height" value="Enter your height in meter">
+	</td></tr>
+	<tr style="color:blue"><td style="font-size:125%">Weight:</td>
+	<td><input type="text" name="weight" value="Enter your weight in kg">
+	</td></tr>
+	<tr><td colspan="2" style="text-align:center"><input type="Submit" style="color:green" value="Get BMI"></td></tr>
+
+</table>
+</form>
+</div>
+<br>
+<strong><p><h3>BMI:Body Mass Index</h3></p></strong>
+<p><em style="color:red">Under weight: BMI< 18.5</p>
+<p><strong style="color:green">Normal weight: 18.5<= BMI <=24.9</strong></p>
+<p style="color:red">Over weight: 25< BMI< 30 </p>
+<p style="color:red">Obesity: BMI> 30</em></p>
+</body>
+</html>
+
+
+
